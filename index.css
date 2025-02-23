@@ -3,10 +3,11 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url(background.jpeg);
+    background-image: url(background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .heading {
@@ -29,12 +30,15 @@ body {
     width: max-content;
     white-space: nowrap;
     gap: 20px;
+    flex: 1;
 }
 
 #about {
     display: flex;
     margin: 20px;
     width: 75%;
+    gap: 20px;
+    flex: 1;
 }
 
 .bio {
@@ -57,6 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .certificate {
@@ -71,10 +76,29 @@ body {
     flex-wrap: wrap;
     margin: 50px;
     gap: 10px;
+    flex: 1;
 }
 
 .dish {
     width: 125px;
     height: 125px;
     border-radius: 10px;
+}
+
+#links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 15px;
+    margin-top: 5px;
+    flex: 1;
+}
+
+.buttons {
+    flex: 1;
+    height: 50px;
+    font-weight: bold;
+    font-size: large;
 }
